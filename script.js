@@ -45,3 +45,29 @@ contactBtn.addEventListener('mouseover', () => {
 contactBtn.addEventListener('mouseout', () => {
   contactBtn.style.backgroundColor = '#11cdd4';
 });
+
+// Function to handle hover and click events for certificates
+function handleCertificateEvents() {
+  const certificates = document.querySelectorAll(".certificate-item");
+
+  certificates.forEach((certificate) => {
+    certificate.addEventListener("mouseover", () => {
+      const certificateName = certificate.querySelector(".certificate-name");
+      certificateName.style.opacity = "1"; // Set opacity to 1 to make the name visible
+    });
+
+    certificate.addEventListener("mouseout", () => {
+      const certificateName = certificate.querySelector(".certificate-name");
+      certificateName.style.opacity = "0"; // Set opacity to 0 to hide the name again
+    });
+
+    certificate.addEventListener("click", () => {
+      const certificateLink = certificate.getAttribute("data-link");
+      window.open(certificateLink, "_blank"); // Open the link in a new tab
+    });
+  });
+}
+
+// Call the function to handle certificate events
+handleCertificateEvents();
+
