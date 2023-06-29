@@ -41,21 +41,44 @@ p {
     margin-top: 30px;
 }
 
-.pro {
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-.certifications {
-    margin-top: 100px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+.skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
     text-align: left;
 }
 
-.certification-item {
-    margin-bottom: 20px;
+.top-cloud {
+    position: relative;
+    left: 400px;
+    top: 40px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+}
+
+.star {
+    width: 20%;
+    float: left;
+    margin-right: 35px;
+}
+
+.rank {
+    width: 30%;
+    float: right;
+    margin-left: 30px;
+}
+
+.top-container {
+    background-color: #EAF6F6;
+    position: relative;
+    padding-top: 100px;
+}
+
+.middle-container {
+    margin: 100px auto;
 }
 
 .contact {
@@ -82,9 +105,16 @@ a:hover {
 .btn {
     background: #66BFBF;
     color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.contact-btn:hover {
+.btn:hover {
     background: #30e3cb;
 }
 
@@ -102,4 +132,34 @@ a:hover {
     color: #EAF6F6;
     font-size: 0.75rem;
     padding: 20px 0px;
+}
+
+/* New Changes */
+
+.certifications {
+    margin-top: 100px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.certification-item {
+    margin-bottom: 20px;
+}
+
+.contact-btn {
+    background: #66BFBF;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: #30e3cb;
 }
